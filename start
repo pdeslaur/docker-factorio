@@ -1,0 +1,13 @@
+#!/bin/ash
+
+set -eo pipefail
+
+BIN="/factorio/bin/x64/factorio"
+SAVE_FILE="/factorio/saves/${FACTORIO_SAVE_NAME}.zip"
+
+if [[ ! -e "${SAVE_FILE}" ]]; then
+  "$BIN" --create "${SAVE_FILE}"
+fi
+
+"$BIN" --start-server-load-latest
+
