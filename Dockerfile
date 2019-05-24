@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc
+FR OM frolvlad/alpine-glibc
 
 WORKDIR /factorio
 
