@@ -19,4 +19,5 @@ ENV CONFIG_FILE /factorio/config/server-settings.json
 
 COPY start start
 
+
 ENTRYPOINT ["./start"]
