@@ -1,4 +1,4 @@
-FR OM frolvlad/alpine-glibc
+FROM frolvlad/alpine-glibc
 
 WORKDIR /factorio
 
@@ -18,5 +18,6 @@ ENV SAVE_FILE /factorio/saves/save.zip
 ENV CONFIG_FILE /factorio/config/server-settings.json
 
 COPY start start
+
 
 ENTRYPOINT ["./start"]
